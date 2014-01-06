@@ -29,7 +29,7 @@ exports.start = function (options, callback) {
         debug('proxy: ' + data.toString());
       });
 
-      callback(null, 'http://kerberos.com:' + port, token);
+      callback(null, 'http://localhost:' + port, token);
 
     });
 
