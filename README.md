@@ -16,13 +16,16 @@ var app = express();
 var kerberos = require('./..');
 
 app.configure(function () {
-  this.use(express.logger());
 
   this.use(kerberos({
     proxy_to: 'http://localhost:9090',
     check_ip: true,
     header:   'X-Forwarded-User'
   }));
+
+  //other middlewares
+  //this.use(express.json());
+  //this.use(express.urlencoded());
 
 });
 
