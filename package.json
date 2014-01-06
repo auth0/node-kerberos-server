@@ -1,0 +1,23 @@
+{
+  "name": "express-kerberos",
+  "version": "0.0.0",
+  "description": "Kerberos middleware for connect/express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "~3.4.7",
+    "tunnel": "0.0.2"
+  },
+  "dependencies": {
+    "debug": "~0.7.4",
+    "range_check": "0.0.4",
+    "request": "~2.30.0",
+    "freeport": "~1.0.2",
+    "forever-agent": "~0.5.0"
+  }
+}

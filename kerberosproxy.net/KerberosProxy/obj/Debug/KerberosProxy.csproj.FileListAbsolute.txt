@@ -1,0 +1,30 @@
+c:\users\jose\documents\visual studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\KerberosProxy.exe.config
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\obj\Debug\KerberosProxy.csprojResolveAssemblyReference.cache
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\KerberosProxy.exe
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\KerberosProxy.pdb
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.Diagnostics.dll
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.dll
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.Hosting.dll
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Owin.dll
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.xml
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.Diagnostics.xml
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\bin\Debug\Microsoft.Owin.Hosting.xml
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\obj\Debug\KerberosProxy.exe
+c:\Users\jose\Documents\Visual Studio 2013\Projects\KerberosProxy\KerberosProxy\obj\Debug\KerberosProxy.pdb
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\KerberosProxy.exe.config
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\obj\Debug\KerberosProxy.exe
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\obj\Debug\KerberosProxy.pdb
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\KerberosProxy.exe
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\KerberosProxy.pdb
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.Diagnostics.dll
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.dll
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Owin.dll
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.xml
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.Diagnostics.xml
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\jose\Projects\express-kerberos\kerberosproxy.net\KerberosProxy\obj\Debug\KerberosProxy.csprojResolveAssemblyReference.cache
