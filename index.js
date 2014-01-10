@@ -54,6 +54,8 @@ module.exports = function (options) {
 
     res.removeHeader('x-powered-by');
 
-    req.pipe(request(backend)).pipe(res);
+    var proxy_url = backend + (req.originalUrl || req.url);
+
+    req.pipe(request(proxy_url)).pipe(res);
   };
 };

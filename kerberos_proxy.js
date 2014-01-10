@@ -1,7 +1,7 @@
 var crypto = require('crypto');
 var exec = require('child_process').exec;
 var debug = require('debug')('express-kerberos');
-var proxy_path = __dirname + '\\kerberosproxy.net\\KerberosProxy\\bin\\Debug\\KerberosProxy.exe';
+var proxy_path = '"' + __dirname + '\\kerberosproxy.net\\KerberosProxy\\bin\\Debug\\KerberosProxy.exe"';
 
 var freeport = require('freeport');
 
