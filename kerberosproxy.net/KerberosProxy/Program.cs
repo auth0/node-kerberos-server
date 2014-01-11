@@ -29,7 +29,7 @@ namespace KerberosProxy
             Program.TestUser = args.Length == 4 ? args[3].ToString() : null;
             try
             {
-                using (WebApp.Start<Startup>("http://localhost:" + args[0].ToString()))
+                using (WebApp.Start<Startup>("http://*:" + args[0].ToString()))
                 {
                     Console.ReadLine();
                 }
