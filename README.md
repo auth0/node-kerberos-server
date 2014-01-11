@@ -1,4 +1,4 @@
-Kerberos http server interface for node.
+Kerberos http server interface for node. __Windows Only.__
 
 ## Installation
 
