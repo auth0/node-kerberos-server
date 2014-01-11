@@ -1,25 +1,19 @@
 {
-  "name": "express-kerberos",
-  "version": "0.0.4",
-  "description": "Kerberos middleware for connect/express.",
+  "name": "kerberos-server",
+  "version": "0.0.5",
+  "description": "Kerberos http server",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:auth0/express-kerberos.git"
+    "url": "git@github.com:auth0/kerberos-server.git"
   },
   "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
   "license": "MIT",
   "devDependencies": {
-    "express": "~3.4.7",
-    "tunnel": "0.0.2"
+    "express": "~3.4.7"
   },
   "dependencies": {
     "debug": "~0.7.4",
-    "range_check": "0.0.4",
-    "request": "~2.30.0",
     "freeport": "~1.0.2"
   }
 }

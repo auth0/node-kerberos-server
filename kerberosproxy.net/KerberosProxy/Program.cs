@@ -9,13 +9,13 @@ using System.IO;
 using System.Collections.Specialized;
 using Microsoft.Owin;
 using System.Net.Http.Headers;
+using System.Diagnostics;
 
 namespace KerberosProxy
 {
     class Program
     {
         public static string Backend { get; private set; }
-        public static string Secret { get; private set; }
         public static string Header { get; private set; }
         public static string TestUser { get; private set; }
 
@@ -26,13 +26,20 @@ namespace KerberosProxy
         {
             Program.Backend = args[1].ToString();
             Program.Header = args[2].ToString();
-            Program.Secret = args[3].ToString();
-            Program.TestUser = args.Length == 5 ? args[4].ToString() : null;
-
-            using (WebApp.Start<Startup>("http://*:" + args[0].ToString()))
+            Program.TestUser = args.Length == 4 ? args[3].ToString() : null;
+            try
             {
-                Console.ReadLine();
+                using (WebApp.Start<Startup>("http://localhost:" + args[0].ToString()))
+                {
+                    Console.ReadLine();
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.InnerException.Message);
+                System.Environment.Exit(1);
+            }
+            
         }
     }
 
@@ -64,7 +71,6 @@ namespace KerberosProxy
                     }
 
                     request.Headers.Add(Program.Header, Program.TestUser ?? context.Request.User.Identity.Name);
-                    request.Headers.Add(Program.Header + "-Secret", Program.Secret);
 
                     context.Request.Headers.TryCopyTo(request.Headers);
 

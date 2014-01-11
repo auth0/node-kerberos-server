@@ -1,37 +1,30 @@
-var crypto = require('crypto');
 var exec = require('child_process').exec;
-var debug = require('debug')('express-kerberos');
+var debug = require('debug')('kerberos-server');
 var proxy_path = '"' + __dirname + '\\kerberosproxy.net\\KerberosProxy\\bin\\Debug\\KerberosProxy.exe"';
 
-var freeport = require('freeport');
+exports.start = function (options) {
+  var cmd = [proxy_path, options.port, 'http://localhost:' + options.proxy_to, options.header, options.test_user].join(' ');
 
-exports.start = function (options, callback) {
-  freeport(function (err, port) {
-    crypto.randomBytes(48, function(ex, buf) {
-      var token = buf.toString('base64');
+  debug('running: ' + cmd);
 
-      var cmd = [proxy_path, port, options.proxy_to, options.header, token, options.test_user].join(' ');
+  //start the proxy
+  var proc = exec(cmd, function (err) {
+    if (err) {
+      console.log('can\'t start kerberosproxy.exe');
+      process.exit(1);
+    }
+  }).on('exit', function (code) {
+    if (code) {
+      console.log('kerberosproxy.exe closed with status code ' + code);
+      process.exit(1);
+    }
+  });
 
-      debug('running: ' + cmd);
+  proc.stdout.on('data', function (data) {
+    debug('proxy: ' + data.toString());
+  });
 
-      //start the proxy
-      exec(cmd, function (err) {
-        if (err) {
-          console.log('can\'t start kerberosproxy.exe');
-          process.exit(1);
-        }
-      }).on('exit', function (code) {
-        if (code) {
-          console.log('kerberosproxy.exe closed with status code ' + code);
-          process.exit(1);
-        }
-      }).on('data', function (data) {
-        debug('proxy: ' + data.toString());
-      });
-
-      callback(null, 'http://localhost:' + port, token);
-
-    });
-
+  proc.stderr.on('data', function (data) {
+    debug('proxy: ' + data.toString());
   });
 };
