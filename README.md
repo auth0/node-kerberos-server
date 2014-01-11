@@ -1,4 +1,4 @@
-Kerberos and NTLM middleware for express.js (Windows only).
+Kerberos http server interface for node.
 
 ## Installation
 
