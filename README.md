@@ -34,6 +34,10 @@ kerberos_server
 
 The server has always a .Net proxy running it listening to port, it authenticate requests and pipe to the real node http server running on a random free port.
 
+## Issue Reporting
+
+If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+
 ## License
 
 The MIT License (MIT)
