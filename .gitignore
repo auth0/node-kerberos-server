@@ -1,5 +1,7 @@
 # Created by http://gitignore.io
 
+.DS_Store
+
 ### Node ###
 lib-cov
 *.seed
