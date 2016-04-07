@@ -51,10 +51,13 @@ namespace KerberosProxy
             HttpListener listener =
                 (HttpListener)app.Properties["System.Net.HttpListener"];
 
-            listener.AuthenticationSchemes =
-                AuthenticationSchemes.IntegratedWindowsAuthentication;
-            
-            listener.UnsafeConnectionNtlmAuthentication = true;
+            if (Program.TestUser == null)
+            {
+                listener.AuthenticationSchemes =
+                    AuthenticationSchemes.IntegratedWindowsAuthentication;
+
+                listener.UnsafeConnectionNtlmAuthentication = true;
+            }
 
             app.Run(async context =>
             {
