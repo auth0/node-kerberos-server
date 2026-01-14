@@ -4,7 +4,8 @@ var freeport = require('freeport');
 var kerberos_proxy = require('./kerberos_proxy');
 
 function KerberosServer(handler, options) {
-  Server.call(this, handler);
+  const { maxHeaderSize } = options
+  Server.call(this, { maxHeaderSize }, handler);
   this._options = options || {};
 }
 
