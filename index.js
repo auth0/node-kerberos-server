@@ -4,7 +4,8 @@ var freeport = require('freeport');
 var kerberos_proxy = require('./kerberos_proxy');
 
 function KerberosServer(handler, options) {
-  const { maxHeaderSize } = options
+  // In case maxHeaderSize is not defined we can use the default
+  const maxHeaderSize = options?.maxHeaderSize ?? 16834;
   Server.call(this, { maxHeaderSize }, handler);
   this._options = options || {};
 }
